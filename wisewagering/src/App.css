@@ -1,0 +1,282 @@
+/* Applies to everything */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Styles the body for the whole website */
+body{
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Main wrapper for whole website */
+.app-container{
+    min-height:100vh;
+}
+/* Used to format the main header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#151515;
+    border-bottom:2px solid #66ff33;
+}
+/* Styles my main title on my home page */
+.logo{
+    font-size:2rem;
+    font-weight:bold;
+}
+/* Styles my universal nav bar */
+nav{
+    display:flex;
+    gap:20px;
+}
+/* Styles the buttons on nav bar */
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+/* Adds a hover element to the nav bar buttons */
+nav button:hover{
+    color:#66ff33;
+}
+
+/* Home Page  */
+.home{
+    height:350px;
+    background:linear-gradient(to right, #0f0f0f, #1f1f1f);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+/* header for home page */
+.home h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+/* Paragraphs for homepage */
+.home p{
+    font-size:1.3rem;
+    color:#d3d3d3;
+    max-width:700px;
+}
+
+/* Styles the "sports buttons" on the home page */
+.sportsBtns{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:50px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+.sportsBtns button{
+    background:#1b1b1b;
+    color:white;
+    border:none;
+    padding:20px 45px;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:1.2rem;
+    transition:0.3s;
+    border:1px solid #2b2b2b;
+}
+/* Adds a hover element to these buttons */
+.sportsBtns button:hover{
+    background:#66ff33;
+    color:black;
+    transform:translateY(-3px);
+}
+
+/* Sports Page */
+.odds{
+    padding:50px;
+}
+/* The sport title */
+.sport{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:40px;
+}
+/* Will display it is loading content while the API loads */
+.loading-text{
+    text-align:center;
+    margin-top:40px;
+}
+
+/* Odds */
+/* Layout to organize the cards to a grid */
+.oddsGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:25px;
+}
+/* The cards for each sport that separtes the different matchups */
+.oddsCard{
+    background:#1b1b1b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #2b2b2b;
+    transition:0.3s;
+}
+/* Adds a hover Elements */
+.oddsCard:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 0px 15px #ff7b00;
+}
+/* The header for each card that displays who is playing */
+.oddsCard h2{
+    margin:10px 0;
+    font-size:1.4rem;
+}
+/* The paragraph in each card that says "vs" */
+.oddsCard p{
+    color:#bdbdbd;
+    margin:10px 0;
+}
+
+/* Odds Buttons */
+/* Tells what you are betting on */
+.marketOdds{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+/* The header which say if it is moneyline, spread, or point total */
+.marketOdds h3{
+    margin-bottom:10px;
+    color:white;
+}
+/* Formats the buttons used to add the data to Supabase */
+.betBtns{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+/* Formats the buttons and adds styling */
+.betBtns button{
+    flex:1;
+    min-width:140px;
+    background:#2f2f2f;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    color:#66ff33;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+/* Adds a hover element */
+.betBtns button:hover{
+    background:#66ff33;
+    color:black;
+}
+
+/* About Page/For dummies page */
+.dummysection{
+    padding:60px;
+}
+/* Styles the header of the sections */
+.dummysection h1{
+    text-align:center;
+    font-size:4rem;
+    margin-bottom:50px;
+}
+/* Creates a grid used for the differnt cards  */
+.infoGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+}
+/* Formats and styles the cards with the information or text on them */
+.infoCard{
+    background:#1b1b1b;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid #2b2b2b;
+    transition:0.3s;
+}
+/* Adds a hover element to the different cards on the pages */
+.infoCard:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 0px 15px #66ff33;
+}
+/* Styles and formates the heading of each card */
+.infoCard h2{
+    color:#66ff33;
+    margin-bottom:15px;
+    font-size:1.8rem;
+}
+/* Styles the text in the cards */
+.infoCard p{
+    line-height:1.8;
+    color:#d4d4d4;
+    font-size:1rem;
+}
+
+/* Bet Table */
+.savedSection{
+    padding:50px;
+}
+/* Header for the page */
+.savedSection h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:3rem;
+}
+/* Main container used to display the chart */
+.chartContainer{
+    width:400px;
+    margin:0 auto 50px auto;
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:20px;
+}
+/* Styles the table */
+.betsTable{
+    width:100%;
+    border-collapse:collapse;
+    background:#1b1b1b;
+    border-radius:20px;
+    overflow:hidden;
+}
+/* Used to tyle the row names on the cart */
+.betsTable th{
+    background:#66ff33;
+    color:black;
+    padding:15px;
+}
+/* Used for the actual contents in the chart */
+.betsTable td{
+    padding:15px;
+    text-align:center;
+    border-top:1px solid #333;
+}
+
+/* Makes the website responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+    .homeOverlay h1{
+        font-size:2.5rem;
+    }
+    .homeOverlay p{
+        font-size:1rem;
+    }
+    .sport{
+        font-size:2rem;
+    }
+    
+}
