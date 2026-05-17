@@ -6,10 +6,8 @@ wisewagering file and executing "npm install" THis will install all necassary pa
 needed to run my program. You also need to go into the server file and execute "npm instll"
 to download everything necassary for the server to run. 
 
-2. To run my app on a server you first need to go to my server file and execute "node server.js"
-This will start running a server on port 3000 to allow the page to run. After that you need to 
-go to the wagerwise file and execute "npm run dev" that will give you a link to open in your 
-browser to run my website.
+2. When running this app it primarly uses Vercel to deploy the server. My frontend is main vite and react
+but the server is taken care of through Vercel. To run the server through vercel just click the link in the previous readme. To run locally you must have access to my credentials (which I will not give out)
 
 3. When running the website the main project testing includes the bets, odds, and the correct teams. 
 Secondly, you want to make sure all of the sports were loaded in correctly. Moreover, save a bet by clicking 
