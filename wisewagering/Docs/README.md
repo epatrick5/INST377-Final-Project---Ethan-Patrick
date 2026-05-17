@@ -7,4 +7,4 @@ also uses primarly Chrome as the broweser and I like Chrome way better than safa
 
 Link to Dev Manual: [Open Manual](Developer_Manual.md)
 
-Here is the Vercel Link: [Vercel Link](inst-377-final-project-ethan-patric.vercel.app)
+Here is the Vercel Link Copy and Paste into Browser: inst-377-final-project-ethan-patric.vercel.app
