@@ -26,7 +26,7 @@ function App() {
         setLoading(true);
         try {
             const response = await fetch(
-                `http://localhost:3000/api/${sport}`
+                 `/api/${sport}`
             );
             const data = await response.json();
             console.log(data);
@@ -42,7 +42,7 @@ function App() {
     async function getSavedBets(){
         try{
             const response = await fetch(
-                'http://localhost:3000/api/bets'
+                '/api/bets'
             );
             const data = await response.json()
             setSavedBets(data)
@@ -66,7 +66,7 @@ async function saveBet(
     try{
       // Request the backend server
         await fetch(
-            'http://localhost:3000/api/bets',
+            '/api/bets',
             {
                 method:'POST',
                 headers:{
